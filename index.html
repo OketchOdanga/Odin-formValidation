@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project | Form </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+          <img src="./odin-lined.png" alt="logo" width="100px" height="150px" >
+          <p>ODIN</p>
+        </section>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="intro">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started. </p>
+                <br>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form">
+                <form >
+                    <p>Let's do this!</p>
+                    <br>
+                    <div class="info">
+                        <div class="c1 items">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" 
+                            pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$\" class="error" required>
+                            <span id="text"></span>
+                        </div>
+                        
+                        <div class="c2 items">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="tel" name="phonenumber" id="phonenumber"
+                             pattern="[0-9]{10}" required>
+                            <label for="re-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="password" id="re-password"
+                            pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$\"  class="error" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                   
+                </form>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
